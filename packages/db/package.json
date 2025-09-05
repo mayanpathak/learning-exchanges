@@ -1,0 +1,27 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    "./client": "./dist/index.js"
+  },
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push --skip-generate",
+    "build": "prisma generate && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "env-cmd": "^10.1.0",
+    "prisma": "^6.6.0"
+  }
+}

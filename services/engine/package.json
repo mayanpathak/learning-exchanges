@@ -1,0 +1,29 @@
+{
+  "name": "@repo/engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.787.0",
+    "@repo/event-queue": "workspace:*",
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "bullmq": "^5.49.1",
+    "dotenv": "^16.5.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0"
+  }
+}

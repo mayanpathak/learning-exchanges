@@ -1,0 +1,27 @@
+{
+  "name": "@repo/wss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -b",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "dotenv": "^16.5.0",
+    "redis": "^4.7.0",
+    "tsx": "^4.19.3",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@repo/event-queue": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/ws": "^8.18.1"
+  }
+}

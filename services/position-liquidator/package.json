@@ -1,0 +1,25 @@
+{
+  "name": "@repo/position-liquidator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "build": "tsc -b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@repo/event-queue": "workspace:*",
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "axios": "^1.8.4",
+    "bullmq": "^5.49.1",
+    "dotenv": "^16.5.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}
